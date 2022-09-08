@@ -1,0 +1,61 @@
+/*
+
+---01 TYPOGRAPHY SYSTEM:
+FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+ WHITESPACE
+- SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Work Sans", sans-serif;
+  height: 100vh;
+  width: 100%;
+}
+.flex {
+  display: flex;
+}
+.flex-reverse {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+.button {
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-family: "Work Sans", sans-serif;
+  background-color: #0369a1;
+  color: #fff;
+  border-radius: 11px;
+}
+.button:active,
+.button:hover {
+  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 3px #0284c7;
+  background-color: #075985;
+}
+
+header {
+  height: 100vh;
+}
+.grid--2-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+.grid--5-col {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(4, 1fr);
+  justify-items: center;
+}
