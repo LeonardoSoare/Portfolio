@@ -183,10 +183,12 @@ FONT SIZE SYSTEM (px)
   top: -20%;
   transform: translate(15%, 0%);
 }
-
+.accesible {
+  padding-left: 2.4rem;
+}
 .feature-img {
   overflow: hidden;
-  width: 50rem;
+  width: 65rem;
   border-radius: 11px;
 }
 .feature-img:nth-child(odd) {
