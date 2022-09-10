@@ -88,26 +88,32 @@ FONT SIZE SYSTEM (px)
   font-size: 2rem;
 }
 .about-section {
-  justify-content: space-between;
-  margin-bottom: 9.6rem;
   background-color: #f8f9fa;
-  padding: 6.4rem 0;
+  padding-top: 3.2rem;
 }
 .about-title {
+  padding-left: 6.4rem;
   padding-top: 1.6rem;
-  margin-bottom: 0.8rem;
+  /* margin-bottom: 0.8rem; */
   /* padding-left: 1.6rem; */
-  color: #fff;
-  font-size: 4rem;
+  color: #000;
+  letter-spacing: 1.1;
+  font-size: 4.4rem;
   font-weight: 700;
 }
-.mission {
-  padding-top: 3.2rem;
-  padding-bottom: 6.4rem;
-  padding-left: 6.4rem;
+.mission-container {
   background-color: #075985;
   border-radius: 0 9px 9px 0;
+  padding-bottom: 6.4rem;
+  padding-top: 3.2rem;
 }
+.mission {
+  justify-content: space-between;
+  margin-bottom: 9.6rem;
+  padding-left: 6.4rem;
+  padding: 4.8rem 0;
+}
+
 .heading-secondary {
   color: #fff;
   font-weight: 500;
@@ -123,7 +129,7 @@ FONT SIZE SYSTEM (px)
   border-radius: 11px;
   overflow: hidden;
   margin-right: 6.4rem;
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); */
   /* box-shadow: -0.8rem 1.6rem 4rem rgba(0, 0, 0, 0.25); */
 }
 .mission-description {
@@ -198,7 +204,12 @@ FONT SIZE SYSTEM (px)
   justify-self: end;
 }
 .journal {
-  height: 40rem;
+  width: 45rem;
+  /* height: 40rem; */
+  /* padding-bottom: 3.2rem;
+   */
+  margin-bottom: 9.6rem;
+  margin-right: 9.6rem;
 }
 .testimonials-section {
   overflow: hidden;
