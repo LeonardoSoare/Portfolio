@@ -74,11 +74,16 @@ FONT SIZE SYSTEM (px)
   gap: 4.8rem;
   justify-content: space-around;
 }
+
 .img-container {
   overflow: hidden;
   width: 55rem;
   border-radius: 9px;
 }
+.title {
+  width: 40rem;
+}
+
 .img {
   width: 100%;
 }
@@ -192,7 +197,7 @@ FONT SIZE SYSTEM (px)
   position: absolute;
   left: 100%;
   top: -16%;
-  transform: translate(0%, 0%);
+  transform: translate(-3%, 0%);
 }
 .accesible {
   padding-left: 2.4rem;
@@ -343,8 +348,17 @@ FONT SIZE SYSTEM (px)
   font-weight: 500;
   text-align: center;
 }
+.pricing-name-premium {
+  font-size: 2.8rem;
+  font-weight: 600;
+  text-align: center;
+}
 .price {
   font-size: 2rem;
+  text-align: center;
+}
+.price-premium {
+  font-size: 2.4rem;
   text-align: center;
 }
 .perks {
@@ -355,11 +369,19 @@ FONT SIZE SYSTEM (px)
   height: 24px;
   color: #075985;
 }
+.check-icon-premium {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+}
 .perks {
   margin-bottom: 3.2rem;
 }
 .perk {
   font-size: 1.6rem;
+}
+.perk-premium {
+  font-size: 1.8rem;
 }
 .perks div {
   display: flex;
@@ -374,8 +396,31 @@ FONT SIZE SYSTEM (px)
   font-size: 1.8rem;
   background-color: #0369a1;
 }
+.button-pricing-premium {
+  background-color: #fff;
+  color: #0c4a6e;
+}
+.button-pricing-premium:active,
+.button-pricing-premium:hover {
+  transition: all 0.2s;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 3px #94a3b8;
+  background-color: #f1f5f9;
+}
 .button-free {
   padding: 1.2rem 5.5rem;
+}
+.premium {
+  width: 40.25rem;
+  height: 37.95rem;
+  background-image: none;
+  color: #fff;
+  /* background-color: #0369a1 */
+  background-image: linear-gradient(
+    to right bottom,
+    rgba(12, 74, 110, 0.9),
+    rgba(3, 105, 161, 0.9)
+  );
 }
 .footer-section {
   background-image: linear-gradient(to bottom, #0c4a6e, #075985);
