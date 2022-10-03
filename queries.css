@@ -1,0 +1,75 @@
+/* ******************************* */
+/*  BELOW 1344px(Smaller desktops) */
+/* ******************************* */
+
+@media (max-width: 84em) {
+  html {
+    font-size: 56.25%;
+  }
+  .title {
+    width: 37.5rem;
+  }
+  .onehex-left {
+    transform: translate(-15%, 0%);
+  }
+  .feature-img {
+    width: 50rem;
+  }
+  .robot {
+    width: 30rem;
+  }
+  .features-section {
+    padding-left: 8.4rem;
+    padding-right: 8.4rem;
+  }
+  .threehex {
+    width: 23rem;
+    height: 23rem;
+  }
+  .threehex-left {
+    width: 23rem;
+    height: 23rem;
+  }
+  .testimonial-card {
+    width: 45rem;
+    padding-left: 2.4rem;
+    padding-right: 2.4rem;
+  }
+  .testimonial-title {
+    left: 10%;
+  }
+}
+@media (max-width: 74em) {
+  html {
+    font-size: 50%;
+  }
+  .features-section {
+    padding-right: 4.8rem;
+    padding-left: 4.8rem;
+  }
+  .about-title {
+    padding-left: 4.8rem;
+  }
+  .heading-secondary {
+    padding-left: 4.8rem;
+  }
+  .mission-container {
+    padding-top: 2.4rem;
+    padding-bottom: 4.8rem;
+  }
+  .mission-description {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+  .mission {
+    gap: 0.8rem;
+  }
+  .screen-container-mission {
+    width: 40rem;
+  }
+}
+@media (max-width: 61.25em) {
+  html {
+    font-size: 56.25%;
+  }
+}
