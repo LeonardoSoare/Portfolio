@@ -5,6 +5,7 @@
 @media (max-width: 84em) {
   html {
     font-size: 56.25%;
+    height: 100%;
   }
   .title {
     width: 37.5rem;
@@ -71,5 +72,122 @@
 @media (max-width: 61.25em) {
   html {
     font-size: 56.25%;
+  }
+  .main {
+    width: 100%;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    padding-bottom: 6.4rem;
+    margin-top: 8rem;
+  }
+  .title {
+    width: 35rem;
+  }
+  .mission {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .mission-container {
+    border-radius: 9px;
+    order: 2;
+  }
+  .screen-container-mission {
+    width: 45rem;
+  }
+  .mission-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+  }
+  .features-section {
+    overflow: visible;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .feature-img {
+    width: 60rem;
+    margin: 0 auto;
+  }
+  .res-order-1 {
+    order: 1;
+  }
+  .res-order-2 {
+    order: 2;
+  }
+  .res-order-3 {
+    order: 3;
+  }
+  .res-order-4 {
+    order: 4;
+  }
+  .res-order-5 {
+    order: 5;
+  }
+  .res-order-6 {
+    order: 6;
+  }
+  .robot {
+    width: 30rem;
+  }
+
+  .testimonials {
+    column-gap: 3.2rem;
+    row-gap: 3.2rem;
+  }
+  .testimonial-card {
+    width: 100%;
+    background-color: none;
+    box-shadow: none;
+    background-color: #f8f9fa;
+  }
+  .testimonial-card:nth-child(1) {
+    box-shadow: none;
+  }
+  .testimonial-card:nth-child(2) {
+    box-shadow: none;
+  }
+  .testimonial-card:nth-child(3) {
+    box-shadow: none;
+  }
+  .testimonial-card:nth-child(4) {
+    box-shadow: none;
+  }
+  .pricing-card {
+    width: 25rem;
+  }
+  .premium {
+    width: 28.75rem;
+  }
+  .check-icon {
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+  .check-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  .perks div {
+    padding-left: 1.6rem;
+  }
+  /* Temporary */
+  .threehex,
+  .threehex-left {
+    display: none;
+  }
+  .onehex-left {
+    display: none;
+  }
+  .onehex {
+    display: none;
+  }
+  .mission-description {
+    width: 100%;
   }
 }
