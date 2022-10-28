@@ -6,6 +6,8 @@ const btnLearnMore = document.querySelector(".button-learn");
 const sectionFeature = document.querySelector(".features-section");
 const aboutSection = document.querySelector(".about-section");
 const navHeight = navigation.getBoundingClientRect().height;
+const companyLogo = document.querySelector(".company-logo").firstElementChild;
+// console.log(companyLogo);
 console.log(navHeight);
 
 //Sticky navigation
@@ -13,8 +15,13 @@ const stickyNav = function (entries) {
   const [entry] = entries;
   console.log(entry);
 
-  if (!entry.isIntersecting) navigation.classList.add("sticky");
-  else navigation.classList.remove("sticky");
+  if (!entry.isIntersecting) {
+    navigation.classList.add("sticky");
+    companyLogo.setAttribute("src", "/img/whitelogoBbg.png");
+  } else {
+    companyLogo.setAttribute("src", "/img/heuristicslogo.png");
+    navigation.classList.remove("sticky");
+  }
 };
 
 const obs = new IntersectionObserver(stickyNav, {
@@ -25,8 +32,16 @@ const obs = new IntersectionObserver(stickyNav, {
 obs.observe(header);
 // console.log(sectionFeature);
 btnLearnMore.addEventListener("click", function (e) {
-  sectionFeature.scrollIntoView({ behavior: "smooth" });
+  sectionFeature.scrollIntoView({
+    behavior: "smooth",
+  });
   console.log("hello");
+});
+navigation.addEventListener("click", function (e) {
+  e.preventDefault();
+  const id = e.target.getAttribute("href");
+  console.log(id);
+  document.querySelector(`${id}`).scrollIntoView({ behavior: "smooth" });
 });
 
 // const bodylabel = document.querySelector("body");

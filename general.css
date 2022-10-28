@@ -7,6 +7,10 @@ FONT SIZE SYSTEM (px)
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
 */
+:root {
+  --color-primary: #0369a1;
+  --color-white: #fff;
+}
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +19,7 @@ FONT SIZE SYSTEM (px)
 
 html {
   font-size: 62.5%;
+  overflow: auto;
 }
 body {
   font-family: "Work Sans", sans-serif;
@@ -65,10 +70,4 @@ header {
 }
 .active {
   display: block;
-}
-.navigation.sticky {
-  width: 100%;
-  position: fixed;
-  background-color: #fff;
-  top: 0;
 }

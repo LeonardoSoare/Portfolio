@@ -7,6 +7,9 @@ FONT SIZE SYSTEM (px)
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
 */
+:root {
+  --color-primary: #0369a1;
+}
 
 .navigation {
   padding: 2.4rem 1.6rem;
@@ -469,4 +472,21 @@ p {
   font-size: 1.8rem;
   color: #fff;
   margin-bottom: 1.6rem;
+}
+/* Sticky */
+.navigation.sticky {
+  width: 100%;
+  position: fixed;
+  background-color: rgba(3, 105, 161, 0.95);
+  color: var(--color-white);
+  /* top: 0; */
+  /* opacity: 90%; */
+  backdrop-filter: blur(3px);
+}
+.sticky .nav-text {
+  color: var(--color-white);
+}
+.sticky .button {
+  background-color: var(--color-white);
+  color: var(--color-primary);
 }
