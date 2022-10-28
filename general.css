@@ -48,6 +48,7 @@ body {
 
 header {
   height: 100vh;
+  overflow: hidden;
 }
 .grid--2-col {
   display: grid;
@@ -58,4 +59,16 @@ header {
   display: grid;
   grid-template-columns: 1.5fr repeat(4, 1fr);
   justify-items: center;
+}
+.menu {
+  display: none;
+}
+.active {
+  display: block;
+}
+.navigation.sticky {
+  width: 100%;
+  position: fixed;
+  background-color: #fff;
+  top: 0;
 }

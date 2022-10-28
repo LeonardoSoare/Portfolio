@@ -7,6 +7,9 @@
     font-size: 56.25%;
     height: 100%;
   }
+  header {
+    max-width: 100%;
+  }
   .title {
     width: 37.5rem;
   }
@@ -189,5 +192,87 @@
   }
   .mission-description {
     width: 100%;
+  }
+
+  @media (max-width: 50.25em) {
+    html {
+      font-size: 56.25%;
+    }
+    .nav-texts {
+      display: none;
+    }
+    .menu {
+      display: block;
+    }
+    .heading {
+      font-size: 4.4rem;
+    }
+    .feature-img {
+      width: 100%;
+    }
+    .features-title {
+      font-size: 4.4rem;
+    }
+    .feature-title {
+      font-size: 3.6rem;
+    }
+    .feature-description {
+      font-size: 1.6rem;
+    }
+    .robot {
+      width: 30rem;
+    }
+    .mission-description {
+      font-size: 1.6rem;
+    }
+    .heading-secondary {
+      font-size: 2.4rem;
+    }
+    .mission-container {
+      padding-bottom: 4.8rem;
+      padding-top: 2.4rem;
+    }
+    .grid--5-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      row-gap: 4.8rem;
+    }
+    .company {
+      grid-column: -4/-2;
+    }
+    .res-order-1 {
+      order: 1;
+    }
+    .res-order-2 {
+      order: 2;
+    }
+    .res-order-3 {
+      order: 3;
+    }
+    .res-order-4 {
+      order: 4;
+    }
+    .res-order-5 {
+      order: 5;
+    }
+    .footer-section {
+      padding-top: 4.8rem;
+      padding-bottom: 4.8rem;
+    }
+    .company-footer {
+      margin-bottom: 1.6rem;
+    }
+    .account {
+      gap: 1.2rem;
+    }
+    .info {
+      gap: 1.6rem;
+    }
+    .help {
+      gap: 1.6rem;
+    }
+    .screen-container-mission {
+      width: 35rem;
+    }
   }
 }

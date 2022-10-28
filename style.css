@@ -12,6 +12,7 @@ FONT SIZE SYSTEM (px)
   padding: 2.4rem 1.6rem;
   justify-content: space-between;
   align-items: center;
+  z-index: 999;
 }
 .nav-text {
   text-decoration: none;
@@ -42,6 +43,15 @@ FONT SIZE SYSTEM (px)
 .nav-texts {
   align-items: center;
   gap: 2.4rem;
+}
+.burger-menu {
+  width: 3.6rem;
+  height: 3.6rem;
+}
+.close {
+  width: 3.6rem;
+  height: 3.6rem;
+  display: none;
 }
 .cta {
   font-weight: 600;

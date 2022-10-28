@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -21,6 +22,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Michroma&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script defer src="script.js"></script>
 
     <title>Heuristics</title>
   </head>
@@ -41,18 +43,18 @@
           <a href="#" class="nav-text">Pricing</a>
           <a href="#" class="button cta">Try for free</a>
         </div>
-        <!-- <div class="menu">
-          icon
-          icon
-        </div> -->
+       <div class="menu">
+        <ion-icon class="burger-menu" name="menu"></ion-icon>
+        <ion-icon class="close" name="close"></ion-icon>
+       </div>
       </nav>
       <div class="flex container">
         <div class="flex headline">
           <div class="heading">#1 Tool for productivity</div>
           <div class="subheading">Over 5.000.000 active users</div>
-          <a href="#" class="button button-learn">Learn more</a>
+          <button id="feature-section" class="button button-learn">Learn more</button>
         </div>
-        <div class="img-container title">
+        <div class="img-container title predictive">
           <img class="img" src="img/predictive.svg" />
         </div>
       </div>
@@ -252,7 +254,7 @@
       </div>
       </section>
       <section class="footer-section grid--5-col">
-        <div class="company flex-reverse">
+        <div class="company flex-reverse res-order-4">
           <a class="footer-link company-name company-footer">Heuristics</a>
         <div class="logos flex">
         <ion-icon class="logo" name="logo-facebook"></ion-icon>
@@ -263,25 +265,25 @@
       </div>
       <p class="footer-link">Copyright &copy 2022 by Solely Inc. All rights reserved</p>
     </div>
-      <div class="contact-us flex-reverse">
+      <div class="contact-us flex-reverse res-order-5">
         <a class="footer-link header-footer">Contact Us</a>
           <a class="footer-link" href="tel:925-875-9157">925-875-9157</a>
           <a class="footer-link" href="mailto:heuristics@solely.com">heuristics@solely.com</a>
       </div>
-      <div class="account flex-reverse">
+      <div class="account flex-reverse res-order-1">
         <a class="footer-link header-footer">Account</a>
         <a class="footer-link">Create account</a>
         <a class="footer-link">Sign in</a>
         <a class="footer-link">iOS app</a>
       </div>
-      <div class="info flex-reverse">
+      <div class="info flex-reverse res-order-2">
         <a class="footer-link header-footer">Company</a>
         <a class="footer-link">About Heuristics</a>
         <a class="footer-link">For Business</a>
         <a class="footer-link">Careers</a>
         <a class="footer-link">Solely</a>
       </div>
-      <div class="help flex-reverse">
+      <div class="help flex-reverse res-order-3">
         <a class="footer-link header-footer">Resources</a>
         <a class="footer-link">FAQs</a>
         <a class="footer-link">Help center</a>
