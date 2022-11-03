@@ -10,6 +10,9 @@ FONT SIZE SYSTEM (px)
 :root {
   --color-primary: #0369a1;
 }
+.company-logo {
+  overflow: hidden;
+}
 
 .navigation {
   padding: 2.4rem 1.6rem;
@@ -50,6 +53,7 @@ FONT SIZE SYSTEM (px)
 .burger-menu {
   width: 3.6rem;
   height: 3.6rem;
+  display: none;
 }
 .close {
   width: 3.6rem;
@@ -489,4 +493,7 @@ p {
 .sticky .button {
   background-color: var(--color-white);
   color: var(--color-primary);
+}
+.active {
+  display: block;
 }

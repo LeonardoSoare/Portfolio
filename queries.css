@@ -107,7 +107,7 @@
     align-items: center;
   }
   .features-section {
-    overflow: visible;
+    /* overflow: visible; */
   }
   .features {
     display: grid;
@@ -199,10 +199,29 @@
       font-size: 56.25%;
     }
     .nav-texts {
-      display: none;
+      top: 0;
+      align-items: center;
+      position: fixed;
+      background-color: rgba(3, 105, 161, 0.95);
+      width: 100%;
+      height: 100vh;
+      flex-direction: column-reverse;
+      justify-content: center;
+      gap: 3.6rem;
+      left: 100%;
+      transition: all 0.3s;
+      z-index: 99;
+    }
+    .nav-text {
+      font-size: 2.4rem;
+      color: white;
+    }
+    .close {
+      color: #fff;
     }
     .menu {
       display: block;
+      z-index: 1000;
     }
     .heading {
       font-size: 4.4rem;
@@ -272,7 +291,110 @@
       gap: 1.6rem;
     }
     .screen-container-mission {
-      width: 35rem;
+      width: 32.5rem;
     }
+  }
+}
+@media (max-width: 40em) {
+  html {
+    font-size: 56.25%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  .company-logo {
+    overflow-y: hidden;
+  }
+  .navigation {
+    margin-bottom: 3.2rem;
+  }
+  .container {
+    margin-top: 3.2rem;
+    gap: 2.4rem;
+    padding-bottom: 0;
+  }
+  .headline {
+    padding-left: 0;
+  }
+  .heading {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  .subheading {
+    font-size: 1.8rem;
+    padding-top: 2.4rem;
+  }
+  .button-learn {
+    margin-top: 2.4rem;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .title {
+    width: 30rem;
+    /* height: 100%; */
+  }
+  .about-title {
+    padding-left: 4.8rem;
+  }
+  .screen-container {
+    margin-right: 0;
+  }
+  .feature-section {
+    padding-left: 4.8rem;
+    padding-right: 4.8rem;
+  }
+  .features {
+    row-gap: 3.2rem;
+  }
+  .feature-title {
+    font-size: 3.2rem;
+  }
+  .accesible {
+    padding-left: 0;
+  }
+  .mission-description {
+    margin-right: 0;
+  }
+  .pricing-plans {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+    justify-items: center;
+  }
+  .premium {
+    order: 1;
+  }
+  .logic {
+    order: 2;
+  }
+  .free {
+    order: 3;
+  }
+  .testimonials {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .testimonial-card {
+    padding-top: 3.2rem;
+    padding: 3.2rem;
+  }
+  .footer-section {
+    column-gap: 1.6rem;
+    row-gap: 2.4rem;
+  }
+  .account {
+    margin-left: 3.2rem;
+  }
+  .info {
+    /* text-align: center; */
+    padding-left: 1.6rem;
+  }
+  .help {
+    margin-left: 1.6rem;
+  }
+  .footer-link {
+    font-size: 1.4rem;
+  }
+  .company-name {
+    font-size: 3rem;
   }
 }
