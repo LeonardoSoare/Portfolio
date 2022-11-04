@@ -13,14 +13,12 @@ const openMenu = document.querySelector(".burger-menu");
 const closeMenu = document.querySelector(".close");
 const navText = document.querySelector(".nav-texts");
 // console.log(companyLogo);
-console.log(navHeight);
 
 //Universal mechanism
 
 // Sticky navigation
 const stickyNav = function (entries) {
   const [entry] = entries;
-  console.log(entry);
 
   if (!entry.isIntersecting) {
     navigation.classList.add("sticky");
@@ -42,7 +40,6 @@ btnLearnMore.addEventListener("click", function (e) {
   sectionFeature.scrollIntoView({
     behavior: "smooth",
   });
-  console.log("hello");
 });
 navigation.addEventListener("click", function (e) {
   e.preventDefault();
@@ -50,12 +47,16 @@ navigation.addEventListener("click", function (e) {
   const id = e.target.getAttribute("href");
   console.log(id);
   document.querySelector(`${id}`).scrollIntoView({ behavior: "smooth" });
+  if (closeMenu.classList.contains("active")) {
+    openMenu.classList.toggle("active");
+    closeMenu.classList.toggle("active");
+    navText.style.left = `100%`;
+  }
 });
 
 //for media Queries
 
 const mq = window.matchMedia("(max-width: 50.25em)");
-console.log(mq.matches);
 if (mq.matches) {
   openMenu.classList.add("active");
   menu.addEventListener("click", function (e) {

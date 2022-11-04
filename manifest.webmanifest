@@ -1,0 +1,10 @@
+{
+  "icons": [
+    { "src": "img/whitelogoBbg.png", "type": "image/png", "sizes": "192x192" },
+    {
+      "src": "img/whitelogoBbg512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}
