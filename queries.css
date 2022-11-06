@@ -106,9 +106,6 @@
     grid-template-columns: 1fr 3fr;
     align-items: center;
   }
-  .features-section {
-    /* overflow: visible; */
-  }
   .features {
     display: grid;
     grid-template-columns: 1fr;
@@ -202,7 +199,7 @@
       top: 0;
       align-items: center;
       position: fixed;
-      background-color: rgba(3, 105, 161, 0.95);
+      background-color: rgba(3, 105, 161, 0.98);
       width: 100%;
       height: 100vh;
       flex-direction: column-reverse;
@@ -353,6 +350,8 @@
   }
   .mission-description {
     margin-right: 0;
+    padding-right: 3.2rem;
+    padding-left: 3.2rem;
   }
   .pricing-plans {
     display: grid;

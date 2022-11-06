@@ -12,6 +12,7 @@ const menu = document.querySelector(".menu");
 const openMenu = document.querySelector(".burger-menu");
 const closeMenu = document.querySelector(".close");
 const navText = document.querySelector(".nav-texts");
+const title = document.querySelector(".company-name");
 // console.log(companyLogo);
 
 //Universal mechanism
@@ -23,9 +24,11 @@ const stickyNav = function (entries) {
   if (!entry.isIntersecting) {
     navigation.classList.add("sticky");
     companyLogo.setAttribute("src", "/img/whitelogoBbg.png");
+    title.style.color = `#fff`;
   } else {
     companyLogo.setAttribute("src", "/img/heuristicslogo.png");
     navigation.classList.remove("sticky");
+    title.style.color = `#000`;
   }
 };
 
@@ -68,11 +71,33 @@ if (mq.matches) {
   });
 }
 // function isOverflown(element) {
-//   if (element.scrollHeight > element.clientHeight) return element;
+//   if (element.scrollWidth > element.clienWidth) return element;
 //   else return "";
 // }
 // const arr = [...document.getElementsByTagName("div")];
 // arr.forEach(function (el) {
+//   console.log(isOverflown(el));
+// });
+// const arr1 = [...document.getElementsByTagName("header")].forEach(function (
+//   el
+// ) {
+//   console.log(isOverflown(el));
+// });
+// const arr2 = [...document.getElementsByTagName("nav")].forEach(function (el) {
+//   console.log(isOverflown(el));
+// });
+// const arr3 = [...document.getElementsByTagName("span")].forEach(function (el) {
+//   console.log(isOverflown(el));
+// });
+// const arr4 = [...document.getElementsByTagName("p")].forEach(function (el) {
+//   console.log(isOverflown(el));
+// });
+// const arr5 = [...document.getElementsByTagName("section")].forEach(function (
+//   el
+// ) {
+//   console.log(isOverflown(el));
+// });
+// const arr6 = [...document.getElementsByName("img")].forEach(function (el) {
 //   console.log(isOverflown(el));
 // });
 // console.log();
